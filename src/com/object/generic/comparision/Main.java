@@ -11,6 +11,16 @@ public class Main {
 
         StudentSort [] students_list = {a,b,c};
         Arrays.sort(students_list); // It;s sorting based on compareTo method
+
+        /*
+          Another way
+          Arrays.sort(students_list,new Comparator<StudentSort>{
+            @Override
+            public int compare(StudentSort s1, StudentSort s2){
+               return s1.marks-s2.marks;
+          });
+         */
+        
         System.out.println(Arrays.toString(students_list));
           }
 }
