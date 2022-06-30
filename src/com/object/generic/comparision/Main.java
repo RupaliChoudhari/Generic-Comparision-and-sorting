@@ -1,18 +1,16 @@
 package com.object.generic.comparision;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        Student A = new Student(1,"AAA",90);
-        Student B = new Student(2,"BBB",80);
-        Student C = new Student(3,"CCC",85);
+        StudentSort a = new StudentSort(1,"AAA",75);
+        StudentSort b = new StudentSort(2,"BBB",89);
+        StudentSort c = new StudentSort(3,"CCC",85);
 
-        if(A.compareTo(B)>0){
-            System.out.println("A's marks are greater than B");
-        }
-        else if(A.compareTo(B)<0){
-            System.out.println("A's marks are less than B");
-        }
-        else
-            System.out.println("A's marks are equal to B");
-    }
+        StudentSort [] students_list = {a,b,c};
+        Arrays.sort(students_list); // It;s sorting based on compareTo method
+        System.out.println(Arrays.toString(students_list));
+          }
 }
