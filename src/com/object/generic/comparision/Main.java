@@ -17,10 +17,10 @@ public class Main {
           Arrays.sort(students_list,new Comparator<StudentSort>{
             @Override
             public int compare(StudentSort s1, StudentSort s2){
-               return s1.marks-s2.marks;
+               return (int)s1.marks-s2.marks;
           });
          */
-        
+
         System.out.println(Arrays.toString(students_list));
           }
 }
